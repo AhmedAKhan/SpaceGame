@@ -1,0 +1,892 @@
+11:53:15 **** Clean-only build of configuration Release for project SpaceGameExample ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android/build_native.py -b release clean 
+We will remove this script next version,you should use cocos console to build android project.
+
+NDK_ROOT not defined. Please define NDK_ROOT in your environment
+11:53:22 **** Build of configuration Release for project SpaceGameExample ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android/build_native.py -b release all 
+We will remove this script next version,you should use cocos console to build android project.
+
+NDK_ROOT not defined. Please define NDK_ROOT in your environment
+11:53:31 **** Incremental Build of configuration Release for project SpaceGameExample ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android/build_native.py -b release all 
+We will remove this script next version,you should use cocos console to build android project.
+
+NDK_ROOT not defined. Please define NDK_ROOT in your environment
+11:54:52 **** Incremental Build of configuration Release for project SpaceGameExample ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android/build_native.py -b release all 
+We will remove this script next version,you should use cocos console to build android project.
+
+NDK_ROOT not defined. Please define NDK_ROOT in your environment
+11:55:22 **** Clean-only build of configuration Release for project SpaceGameExample ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android/build_native.py -b release clean 
+We will remove this script next version,you should use cocos console to build android project.
+
+NDK_ROOT not defined. Please define NDK_ROOT in your environment
+11:55:27 **** Build of configuration Release for project SpaceGameExample ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android/build_native.py -b release all 
+We will remove this script next version,you should use cocos console to build android project.
+
+NDK_ROOT not defined. Please define NDK_ROOT in your environment
+12:12:12 **** Build of configuration Release for project SpaceGameExample ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android/build_native.py -b release all 
+Android NDK: WARNING: APP_PLATFORM android-15 is larger than android:minSdkVersion 9 in ./AndroidManifest.xml    
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android'
+[armeabi] Compile++ thumb: cocostudio_static <= WidgetReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= FlatBuffersSerialize.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= WidgetCallBackHandlerProtocol.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UILayoutComponent.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= main.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= AppDelegate.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionFrame.cpp
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp: In member function 'std::string cocostudio::FlatBuffersSerialize::serializeFlatBuffersWithXMLFile(const string&, const string&)':
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp:153:93: warning: 'virtual unsigned char* cocos2d::FileUtils::getFileData(const string&, const char*, ssize_t*)' is deprecated (declared at jni/../../cocos2d/cocos/./platform/CCFileUtils.h:101) [-Wdeprecated-declarations]
+     std::string content =(char*)FileUtils::getInstance()->getFileData(inFullpath, "r", &size);
+                                                                                             ^
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp: In member function 'flatbuffers::FlatBufferBuilder* cocostudio::FlatBuffersSerialize::createFlatBuffersWithXMLFileForSimulator(const string&)':
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp:974:93: warning: 'virtual unsigned char* cocos2d::FileUtils::getFileData(const string&, const char*, ssize_t*)' is deprecated (declared at jni/../../cocos2d/cocos/./platform/CCFileUtils.h:101) [-Wdeprecated-declarations]
+     std::string content =(char*)FileUtils::getInstance()->getFileData(inFullpath, "r", &size);
+                                                                                             ^
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionFrameEasing.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionManagerEx.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionNode.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionObject.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmature.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCBone.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmatureAnimation.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCProcessBase.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCTween.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDatas.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCBatchNode.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDecorativeDisplay.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDisplayFactory.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDisplayManager.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSkin.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCColliderDetector.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmatureDataManager.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmatureDefine.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDataReaderHelper.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSpriteFrameCacheHelper.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCTransformHelp.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCUtilMath.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComAttribute.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComAudio.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComController.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComRender.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCInputDelegate.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= DictionaryHelper.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSGUIReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSSceneReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TriggerBase.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TriggerMng.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TriggerObj.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CocoLoader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= NodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= SingleNodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= SpriteReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ParticleReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= GameMapReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ProjectNodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ComAudioReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ButtonReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CheckBoxReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ImageViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= LayoutReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ListViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= LoadingBarReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= PageViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ScrollViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= SliderReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextAtlasReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextBMFontReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextFieldReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCNodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionTimelineCache.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCFrame.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCTimeLine.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionTimeline.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CSLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBAnimationManager.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBFileLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBKeyframe.cpp
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCBAnimationManager.cpp: In member function 'cocos2d::ActionInterval* cocosbuilder::CCBAnimationManager::getEaseAction(cocos2d::ActionInterval*, cocosbuilder::CCBKeyframe::EasingType, float)':
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCBAnimationManager.cpp:612:59: warning: format '%d' expects argument of type 'int', but argument 2 has type 'cocosbuilder::CCBKeyframe::EasingType' [-Wformat=]
+         log("CCBReader: Unkown easing type %d", easingType);
+                                                           ^
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBReader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBSequence.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBSequenceProperty.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCControlButtonLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCControlLoader.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLabelBMFontLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLabelTTFLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLayerColorLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLayerGradientLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLayerLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCMenuItemImageLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCMenuItemLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCNode+CCBRelativePositioning.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCNodeLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCNodeLoaderLibrary.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCParticleSystemQuadLoader.cpp
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNode+CCBRelativePositioning.cpp:62:1: fatal error: opening dependency file ./obj/local/armeabi/objs/cocosbuilder_static/CCNode+CCBRelativePositioning.o.d: No such file or directory
+compilation terminated.
+make: *** [obj/local/armeabi/objs/cocosbuilder_static/CCNode+CCBRelativePositioning.o] Error 1
+make: *** Waiting for unfinished jobs....
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCParticleSystemQuadLoader.cpp:140:1: fatal error: opening dependency file ./obj/local/armeabi/objs/cocosbuilder_static/CCParticleSystemQuadLoader.o.d: No such file or directory
+compilation terminated.
+make: *** [obj/local/armeabi/objs/cocosbuilder_static/CCParticleSystemQuadLoader.o] Error 1
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoaderLibrary.cpp:105:1: fatal error: opening dependency file ./obj/local/armeabi/objs/cocosbuilder_static/CCNodeLoaderLibrary.o.d: No such file or directory
+compilation terminated.
+make: *** [obj/local/armeabi/objs/cocosbuilder_static/CCNodeLoaderLibrary.o] Error 1
+In file included from jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:3:0:
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp: In member function 'virtual void cocosbuilder::NodeLoader::parseProperties(cocos2d::Node*, cocos2d::Node*, cocosbuilder::CCBReader*)':
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.h:23:121: warning: format '%d' expects argument of type 'int', but argument 2 has type 'cocosbuilder::CCBReader::PropertyType' [-Wformat=]
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:364:17: note: in expansion of macro 'ASSERT_FAIL_UNEXPECTED_PROPERTYTYPE'
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp: At global scope:
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:1163:1: fatal error: opening dependency file ./obj/local/armeabi/objs/cocosbuilder_static/CCNodeLoader.o.d: No such file or directory
+compilation terminated.
+make: *** [obj/local/armeabi/objs/cocosbuilder_static/CCNodeLoader.o] Error 1
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameExample/proj.android'
+Command canceled
+12:29:37 **** Clean-only build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release clean 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocostudio_static <= WidgetReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= FlatBuffersSerialize.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= WidgetCallBackHandlerProtocol.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UILayoutComponent.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= main.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= AppDelegate.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp: In member function 'std::string cocostudio::FlatBuffersSerialize::serializeFlatBuffersWithXMLFile(const string&, const string&)':
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp:153:93: warning: 'virtual unsigned char* cocos2d::FileUtils::getFileData(const string&, const char*, ssize_t*)' is deprecated (declared at jni/../../cocos2d/cocos/./platform/CCFileUtils.h:101) [-Wdeprecated-declarations]
+     std::string content =(char*)FileUtils::getInstance()->getFileData(inFullpath, "r", &size);
+                                                                                             ^
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionFrame.cpp
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp: In member function 'flatbuffers::FlatBufferBuilder* cocostudio::FlatBuffersSerialize::createFlatBuffersWithXMLFileForSimulator(const string&)':
+jni/../../cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp:974:93: warning: 'virtual unsigned char* cocos2d::FileUtils::getFileData(const string&, const char*, ssize_t*)' is deprecated (declared at jni/../../cocos2d/cocos/./platform/CCFileUtils.h:101) [-Wdeprecated-declarations]
+     std::string content =(char*)FileUtils::getInstance()->getFileData(inFullpath, "r", &size);
+                                                                                             ^
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionFrameEasing.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionManagerEx.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionNode.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionObject.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmature.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCBone.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmatureAnimation.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCProcessBase.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCTween.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDatas.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCBatchNode.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDecorativeDisplay.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDisplayFactory.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDisplayManager.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSkin.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCColliderDetector.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmatureDataManager.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCArmatureDefine.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCDataReaderHelper.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSpriteFrameCacheHelper.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCTransformHelp.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCUtilMath.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComAttribute.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComAudio.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComController.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCComRender.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCInputDelegate.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= DictionaryHelper.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSGUIReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCSSceneReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TriggerBase.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TriggerMng.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TriggerObj.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CocoLoader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= NodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= SingleNodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= SpriteReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ParticleReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= GameMapReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ProjectNodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ComAudioReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ButtonReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CheckBoxReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ImageViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= LayoutReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ListViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= LoadingBarReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= PageViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= ScrollViewReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= SliderReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextAtlasReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextBMFontReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextFieldReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= TextReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCNodeReader.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionTimelineCache.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCFrame.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCTimeLine.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CCActionTimeline.cpp
+[armeabi] Compile++ thumb: cocostudio_static <= CSLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBAnimationManager.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBFileLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBKeyframe.cpp
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCBAnimationManager.cpp: In member function 'cocos2d::ActionInterval* cocosbuilder::CCBAnimationManager::getEaseAction(cocos2d::ActionInterval*, cocosbuilder::CCBKeyframe::EasingType, float)':
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCBAnimationManager.cpp:612:59: warning: format '%d' expects argument of type 'int', but argument 2 has type 'cocosbuilder::CCBKeyframe::EasingType' [-Wformat=]
+         log("CCBReader: Unkown easing type %d", easingType);
+                                                           ^
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBReader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBSequence.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCBSequenceProperty.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCControlButtonLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCControlLoader.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLabelBMFontLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLabelTTFLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLayerColorLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLayerGradientLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCLayerLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCMenuItemImageLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCMenuItemLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCNode+CCBRelativePositioning.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCNodeLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCNodeLoaderLibrary.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCParticleSystemQuadLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCScale9SpriteLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCScrollViewLoader.cpp
+[armeabi] Compile++ thumb: cocosbuilder_static <= CCSpriteLoader.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCRay.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCAABB.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCOBB.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCAnimate3D.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCAnimation3D.cpp
+In file included from jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:3:0:
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp: In member function 'virtual void cocosbuilder::NodeLoader::parseProperties(cocos2d::Node*, cocos2d::Node*, cocosbuilder::CCBReader*)':
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.h:23:121: warning: format '%d' expects argument of type 'int', but argument 2 has type 'cocosbuilder::CCBReader::PropertyType' [-Wformat=]
+ #define ASSERT_FAIL_UNEXPECTED_PROPERTYTYPE(PROPERTYTYPE) cocos2d::log("Unexpected property type: '%d'!\n", PROPERTYTYPE); assert(false)
+                                                                                                                         ^
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:364:17: note: in expansion of macro 'ASSERT_FAIL_UNEXPECTED_PROPERTYTYPE'
+                 ASSERT_FAIL_UNEXPECTED_PROPERTYTYPE(type);
+                 ^
+[armeabi] Compile++ thumb: cocos3d_static <= CCAttachNode.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCBillBoard.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCBundle3D.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCBundleReader.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocos3d_static <= CCMesh.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCMeshSkin.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCMeshVertexIndexData.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCSprite3DMaterial.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCObjLoader.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCSkeleton3D.cpp
+[armeabi] Compile++ thumb: cocos3d_static <= CCSprite3D.cpp
+[armeabi] Compile thumb  : spine_static <= Animation.c
+[armeabi] Compile thumb  : spine_static <= AnimationState.c
+[armeabi] Compile thumb  : spine_static <= AnimationStateData.c
+[armeabi] Compile thumb  : spine_static <= Atlas.c
+[armeabi] Compile thumb  : spine_static <= AtlasAttachmentLoader.c
+[armeabi] Compile thumb  : spine_static <= Attachment.c
+[armeabi] Compile thumb  : spine_static <= AttachmentLoader.c
+[armeabi] Compile thumb  : spine_static <= Bone.c
+[armeabi] Compile thumb  : spine_static <= BoneData.c
+[armeabi] Compile thumb  : spine_static <= BoundingBoxAttachment.c
+[armeabi] Compile thumb  : spine_static <= Event.c
+[armeabi] Compile thumb  : spine_static <= EventData.c
+[armeabi] Compile thumb  : spine_static <= extension.c
+[armeabi] Compile thumb  : spine_static <= IkConstraint.c
+[armeabi] Compile thumb  : spine_static <= IkConstraintData.c
+[armeabi] Compile thumb  : spine_static <= Json.c
+[armeabi] Compile thumb  : spine_static <= MeshAttachment.c
+[armeabi] Compile++ thumb: spine_static <= PolygonBatch.cpp
+[armeabi] Compile thumb  : spine_static <= RegionAttachment.c
+[armeabi] Compile thumb  : spine_static <= Skeleton.c
+[armeabi] Compile++ thumb: spine_static <= SkeletonAnimation.cpp
+[armeabi] Compile thumb  : spine_static <= SkeletonBounds.c
+[armeabi] Compile thumb  : spine_static <= SkeletonData.c
+[armeabi] Compile thumb  : spine_static <= SkeletonJson.c
+[armeabi] Compile++ thumb: spine_static <= SkeletonRenderer.cpp
+[armeabi] Compile thumb  : spine_static <= Skin.c
+[armeabi] Compile thumb  : spine_static <= SkinnedMeshAttachment.c
+[armeabi] Compile thumb  : spine_static <= Slot.c
+[armeabi] Compile thumb  : spine_static <= SlotData.c
+[armeabi] Compile++ thumb: spine_static <= spine-cocos2dx.cpp
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp: In member function 'virtual void spine::SkeletonRenderer::drawSkeleton(const cocos2d::Mat4&, uint32_t)':
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:229:20: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255);
+                    ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:229:49: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255);
+                                                 ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:242:21: warning: 'void cocos2d::DrawPrimitives::drawPoly(const cocos2d::Vec2*, unsigned int, bool)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:109) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoly(points, 4, true);
+                     ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:242:45: warning: 'void cocos2d::DrawPrimitives::drawPoly(const cocos2d::Vec2*, unsigned int, bool)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:109) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoly(points, 4, true);
+                                             ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:248:20: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(255, 0, 0, 255);
+                    ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:248:49: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(255, 0, 0, 255);
+                                                 ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:253:21: warning: 'void cocos2d::DrawPrimitives::drawLine(const cocos2d::Vec2&, const cocos2d::Vec2&)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:96) [-Wdeprecated-declarations]
+     DrawPrimitives::drawLine(Vec2(bone->worldX, bone->worldY), Vec2(x, y));
+                     ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:253:74: warning: 'void cocos2d::DrawPrimitives::drawLine(const cocos2d::Vec2&, const cocos2d::Vec2&)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:96) [-Wdeprecated-declarations]
+     DrawPrimitives::drawLine(Vec2(bone->worldX, bone->worldY), Vec2(x, y));
+                                                                          ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:256:20: warning: 'void cocos2d::DrawPrimitives::setPointSize(GLfloat)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:160) [-Wdeprecated-declarations]
+    DrawPrimitives::setPointSize(4);
+                    ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:256:34: warning: 'void cocos2d::DrawPrimitives::setPointSize(GLfloat)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:160) [-Wdeprecated-declarations]
+    DrawPrimitives::setPointSize(4);
+                                  ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:257:20: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255); // Root bone is blue.
+                    ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:257:49: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255); // Root bone is blue.
+                                                 ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:260:21: warning: 'void cocos2d::DrawPrimitives::drawPoint(const cocos2d::Vec2&)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:88) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoint(Vec2(bone->worldX, bone->worldY));
+                     ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:260:63: warning: 'void cocos2d::DrawPrimitives::drawPoint(const cocos2d::Vec2&)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:88) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoint(Vec2(bone->worldX, bone->worldY));
+                                                               ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:261:33: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+     if (i == 0) DrawPrimitives::setDrawColor4B(0, 255, 0, 255);
+                                 ^
+jni/../../cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:261:62: warning: 'void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)' is deprecated (declared at jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:150) [-Wdeprecated-declarations]
+     if (i == 0) DrawPrimitives::setDrawColor4B(0, 255, 0, 255);
+                                                              ^
+[armeabi] Compile++ thumb: cocos_network_static <= HttpClient.cpp
+[armeabi] Compile++ thumb: cocos_network_static <= SocketIO.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocos_network_static <= WebSocket.cpp
+[armeabi] Compile++ thumb: audioengine_static <= AudioEngine-inl.cpp
+[armeabi] Compile++ thumb: audioengine_static <= AudioEngine.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIWidget.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UILayout.cpp
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp: In member function 'void cocos2d::experimental::AudioEngineImpl::setVolume(int, float)':
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp:299:43: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+         log("%s error:%u",__func__, result);
+                                           ^
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp: In member function 'void cocos2d::experimental::AudioEngineImpl::pause(int)':
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp:319:43: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+         log("%s error:%u",__func__, result);
+                                           ^
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp: In member function 'void cocos2d::experimental::AudioEngineImpl::resume(int)':
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp:328:43: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+         log("%s error:%u",__func__, result);
+                                           ^
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp: In member function 'void cocos2d::experimental::AudioEngineImpl::stop(int)':
+jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.cpp:337:43: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+         log("%s error:%u",__func__, result);
+                                           ^
+[armeabi] Compile++ thumb: cocos_ui_static <= UILayoutParameter.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UILayoutManager.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= CocosGUI.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIHelper.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIListView.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIPageView.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIScrollView.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIButton.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UICheckBox.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIImageView.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIText.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UITextAtlas.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UITextBMFont.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UILoadingBar.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UISlider.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UITextField.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIRichText.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIHBox.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIVBox.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIRelativeBox.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIVideoPlayer-android.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIDeprecated.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIScale9Sprite.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIWebView.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIWebViewImpl-android.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIEditBox.cpp
+[armeabi] Compile++ thumb: cocos_ui_static <= UIEditBoxImpl-android.cpp
+jni/../../cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-android.cpp: In member function 'virtual void cocos2d::ui::EditBoxImplAndroid::setText(const char*)':
+jni/../../cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-android.cpp:172:31: warning: 'long int cocos2d::cc_utf8_strlen(const char*, int)' is deprecated (declared at jni/../../cocos2d/cocos/./base/ccUTF8.h:169) [-Wdeprecated-declarations]
+                 long length = cc_utf8_strlen(_text.c_str(), -1);
+                               ^
+jni/../../cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-android.cpp:172:63: warning: 'long int cocos2d::cc_utf8_strlen(const char*, int)' is deprecated (declared at jni/../../cocos2d/cocos/./base/ccUTF8.h:169) [-Wdeprecated-declarations]
+                 long length = cc_utf8_strlen(_text.c_str(), -1);
+                                                               ^
+[armeabi] Compile++ thumb: cocosdenshion_static <= cddSimpleAudioEngine.cpp
+[armeabi] Compile++ thumb: cocosdenshion_static <= ccdandroidUtils.cpp
+[armeabi] Compile++ thumb: cocosdenshion_static <= cddandroidAndroidJavaEngine.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocos_flatbuffers_static <= flatc.cpp
+[armeabi] Compile++ thumb: cocos_flatbuffers_static <= idl_gen_cpp.cpp
+[armeabi] Compile++ thumb: cocos_flatbuffers_static <= idl_gen_fbs.cpp
+[armeabi] Compile++ thumb: cocos_flatbuffers_static <= idl_gen_general.cpp
+[armeabi] Compile++ thumb: cocos_flatbuffers_static <= idl_gen_go.cpp
+[armeabi] Compile++ thumb: cocos_flatbuffers_static <= idl_gen_text.cpp
+[armeabi] Compile++ thumb: cocos_flatbuffers_static <= idl_parser.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= AssetsManager.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= Downloader.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= Manifest.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= AssetsManagerEx.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCEventAssetsManagerEx.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCEventListenerAssetsManagerEx.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControl.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlButton.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlColourPicker.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlHuePicker.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlPotentiometer.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlSaturationBrightnessPicker.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlSlider.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlStepper.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlSwitch.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCControlUtils.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCInvocation.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCScrollView.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCTableView.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCTableViewCell.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCPhysicsDebugNode.cpp
+[armeabi] Compile++ thumb: cocos_extension_static <= CCPhysicsSprite.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= cocos2d.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCAction.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionCamera.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionCatmullRom.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionEase.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionGrid.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionGrid3D.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionInstant.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionInterval.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionManager.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionPageTurn3D.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionProgressTimer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionTiledGrid.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCActionTween.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCAnimation.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCAnimationCache.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCAtlasNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCCamera.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCClippingNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCClippingRectangleNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCComponent.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCComponentContainer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCDrawNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCDrawingPrimitives.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFont.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFontAtlas.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFontAtlasCache.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFontCharMap.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFontFNT.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFontFreeType.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGLBufferedNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGrabber.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGrid.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCLabel.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCLabelAtlas.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCLabelBMFont.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCLabelTTF.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCLabelTextFormatter.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCLayer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCLight.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCMenu.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCMenuItem.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCMotionStreak.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCNodeGrid.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCParallaxNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCParticleBatchNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCParticleExamples.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCParticleSystem.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCParticleSystemQuad.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCProgressTimer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCProtectedNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCRenderTexture.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCScene.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCSprite.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCSpriteBatchNode.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCSpriteFrame.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCSpriteFrameCache.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTMXLayer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFastTMXLayer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTMXObjectGroup.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTMXTiledMap.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFastTMXTiledMap.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTMXXMLParser.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTextFieldTTF.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTileMapAtlas.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTransition.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTransitionPageTurn.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTransitionProgress.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTweenFunction.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGLView.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCFileUtils.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCSAXParser.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCThread.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCImage.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCAffineTransform.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGeometry.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCVertex.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= Mat4.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= MathUtil.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= Quaternion.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= TransformUtils.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= Vec2.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= Vec3.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= Vec4.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCAutoreleasePool.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCConfiguration.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCConsole.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCData.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCDataVisitor.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCDirector.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEvent.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventAcceleration.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventCustom.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventDispatcher.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventFocus.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventKeyboard.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventController.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListener.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListenerController.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListenerAcceleration.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListenerCustom.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListenerFocus.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListenerKeyboard.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListenerMouse.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventListenerTouch.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventMouse.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCEventTouch.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCIMEDispatcher.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCNS.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCProfiling.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ccRandom.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCRef.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCScheduler.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCScriptSupport.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTouch.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCUserDefault.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCUserDefault-android.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCValue.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= TGAlib.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ZipUtils.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= atitc.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= base64.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ccCArray.cpp
+[armeabi] Compile thumb  : cocos2dx_internal_static <= ccFPSImages.c
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ccTypes.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ccUTF8.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ccUtils.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= etc1.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= pvr.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= s3tc.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCController.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCController-android.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ObjectFactory.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCBatchCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCCustomCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGLProgram.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGLProgramCache.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGLProgramState.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGLProgramStateCache.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCGroupCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCQuadCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCMeshCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCRenderCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCRenderer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTexture2D.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTextureAtlas.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTextureCache.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ccGLStateCache.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ccShaders.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCVertexIndexBuffer.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCVertexIndexData.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPrimitive.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPrimitiveCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCTrianglesCommand.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCArray.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCSet.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCString.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCDictionary.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCDeprecated.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCNotificationCenter.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsBody.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsContact.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsJoint.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsShape.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsWorld.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsBodyInfo_chipmunk.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsContactInfo_chipmunk.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsJointInfo_chipmunk.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsShapeInfo_chipmunk.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= CCPhysicsWorldInfo_chipmunk.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ConvertUTFWrapper.cpp
+[armeabi] Compile thumb  : cocos2dx_internal_static <= ConvertUTF.c
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= tinyxml2.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ioapi_mem.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= ioapi.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= unzip.cpp
+[armeabi] Compile++ thumb: cocos2dx_internal_static <= edtaa3func.cpp
+[armeabi] Compile thumb  : cocos2dx_internal_static <= xxhash.c
+[armeabi] Compile++ thumb: box2d_static <= b2BroadPhase.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2CollideCircle.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2CollideEdge.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2CollidePolygon.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Collision.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Distance.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2DynamicTree.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2TimeOfImpact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2ChainShape.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2CircleShape.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2EdgeShape.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2PolygonShape.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2BlockAllocator.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Draw.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Math.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Settings.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2StackAllocator.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Timer.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Body.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2ContactManager.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Fixture.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Island.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2World.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2WorldCallbacks.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2ChainAndCircleContact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2ChainAndPolygonContact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2CircleContact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Contact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2ContactSolver.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2EdgeAndCircleContact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2EdgeAndPolygonContact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2PolygonAndCircleContact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2PolygonContact.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2DistanceJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2FrictionJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2GearJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Joint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2MotorJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2MouseJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2PrismaticJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2PulleyJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2RevoluteJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2RopeJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2WeldJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2WheelJoint.cpp
+[armeabi] Compile++ thumb: box2d_static <= b2Rope.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= CCApplication-android.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= CCCommon-android.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= CCDevice-android.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= CCGLViewImpl-android.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= CCFileUtils-android.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= javaactivity-android.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= DPIJni.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= IMEJni.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp
+jni/../../cocos2d/cocos/platform/android/javaactivity-android.cpp: In function 'void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeInit(JNIEnv*, jobject, jint, jint)':
+jni/../../cocos2d/cocos/platform/android/javaactivity-android.cpp:77:34: warning: 'void cocos2d::DrawPrimitives::init()' is deprecated (declared at jni/../../cocos2d/cocos/platform/android/../../2d/CCDrawingPrimitives.h:82) [-Wdeprecated-declarations]
+         cocos2d::DrawPrimitives::init();
+                                  ^
+jni/../../cocos2d/cocos/platform/android/javaactivity-android.cpp:77:39: warning: 'void cocos2d::DrawPrimitives::init()' is deprecated (declared at jni/../../cocos2d/cocos/platform/android/../../2d/CCDrawingPrimitives.h:82) [-Wdeprecated-declarations]
+         cocos2d::DrawPrimitives::init();
+                                       ^
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= Java_org_cocos2dx_lib_Cocos2dxHelper.cpp
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= JniHelper.cpp
+[armeabi] Compile++ thumb: cocos2dxandroid_static <= TouchesJni.cpp
+[armeabi] Compile thumb  : cpufeatures <= cpu-features.c
+[armeabi] StaticLibrary  : libcocostudio.a
+[armeabi] StaticLibrary  : libcocosbuilder.a
+[armeabi] StaticLibrary  : libcocos3d.a
+[armeabi] StaticLibrary  : libspine.a
+[armeabi] StaticLibrary  : libnetwork.a
+[armeabi] StaticLibrary  : libaudioengine.a
+[armeabi] StaticLibrary  : libui.a
+[armeabi] StaticLibrary  : libcocosdenshion.a
+[armeabi] StaticLibrary  : flatbuffers.a
+[armeabi] StaticLibrary  : libextension.a
+[armeabi] StaticLibrary  : libcocos2dxinternal.a
+[armeabi] StaticLibrary  : libbox2d.a
+[armeabi] StaticLibrary  : libcpufeatures.a
+[armeabi] StaticLibrary  : libcocos2dandroid.a
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:35:12 **** Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:35:48 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:36:48 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:36:57 **** Clean-only build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release clean 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:37:20 **** Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:37:37 **** Clean-only build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release clean 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:37:45 **** Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:41:59 **** Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:42:01 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:42:28 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:42:49 **** Clean-only build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release clean 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:43:10 **** Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+12:45:16 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+13:04:27 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+13:05:50 **** Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+13:06:33 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+13:08:28 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+13:08:36 **** Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+13:08:51 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
