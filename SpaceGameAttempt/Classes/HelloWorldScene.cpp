@@ -35,9 +35,17 @@ bool HelloWorld::init()
     _ship->setPosition(Vec2(winSize.width * 0.1, winSize.height * 0.5));
     _batchNode->addChild(_ship, 1);
     
+    
+    //create the parallaxNode
     _backgroundNode = ParallaxNode::create();
     this->addChild(_backgroundNode, -1);
-    
+    //create the sprites, then add them to the parallaxNode
+    _spaceDust1 = Sprite::create("");
+    _spaceDust2 = Sprite::create();
+    _planetSunrise = Sprite::create();
+    _galaxy = Sprite::create();
+    _spacialAnomaly = Sprite::create();
+    _spaceialAnomaly2 = Sprite::create();
     
     return true;
 }
