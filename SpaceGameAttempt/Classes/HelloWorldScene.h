@@ -20,6 +20,7 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
 private:
+    //variables
     SpriteBatchNode * _batchNode;
     Sprite * _ship;
     
@@ -31,6 +32,7 @@ private:
     Sprite * _spacialAnomaly;
     Sprite * _spaceialAnomaly2;
     
+    void update(float dt);
     
 };
 
