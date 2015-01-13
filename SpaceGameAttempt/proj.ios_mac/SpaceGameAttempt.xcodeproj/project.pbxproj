@@ -70,6 +70,7 @@
 		E29A1AC41A6236FF00F6E88E /* Particles in Resources */ = {isa = PBXBuildFile; fileRef = E29A1AC31A6236FF00F6E88E /* Particles */; };
 		E29A1AC61A62370400F6E88E /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = E29A1AC51A62370400F6E88E /* Sounds */; };
 		E29A1AC81A62370C00F6E88E /* Spritesheets in Resources */ = {isa = PBXBuildFile; fileRef = E29A1AC71A62370C00F6E88E /* Spritesheets */; };
+		E29A1AD11A6387B600F6E88E /* ParallaxNodeExtras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29A1ACF1A6387B600F6E88E /* ParallaxNodeExtras.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,8 @@
 		E29A1AC31A6236FF00F6E88E /* Particles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Particles; sourceTree = "<group>"; };
 		E29A1AC51A62370400F6E88E /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		E29A1AC71A62370C00F6E88E /* Spritesheets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Spritesheets; sourceTree = "<group>"; };
+		E29A1ACF1A6387B600F6E88E /* ParallaxNodeExtras.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParallaxNodeExtras.cpp; sourceTree = "<group>"; };
+		E29A1AD01A6387B600F6E88E /* ParallaxNodeExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxNodeExtras.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +302,8 @@
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
+				E29A1ACF1A6387B600F6E88E /* ParallaxNodeExtras.cpp */,
+				E29A1AD01A6387B600F6E88E /* ParallaxNodeExtras.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -506,6 +511,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				E29A1AD11A6387B600F6E88E /* ParallaxNodeExtras.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
