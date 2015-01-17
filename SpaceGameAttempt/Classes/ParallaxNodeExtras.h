@@ -18,7 +18,6 @@ public:
     ParallaxNodeExtras(); // needs a public constructor
     static ParallaxNodeExtras * node();
     void incrementOffset(Point offset, Node * node);
-    
 };
 
 #endif /* defined(__SpaceGameAttempt__ParallaxNodeExtras__) */

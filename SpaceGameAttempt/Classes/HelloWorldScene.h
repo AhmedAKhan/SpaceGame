@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "ParallaxNodeExtras.h"
 
 USING_NS_CC;
 
@@ -16,6 +17,11 @@ public:
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
+	virtual void onAcceleration(Acceleration* acc, Event* event);
+    
+    float randomValueBetween(float low, float high);
+    void setInvisible(Node * node);
+    float getTimeTick();
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
@@ -24,7 +30,7 @@ private:
     SpriteBatchNode * _batchNode;
     Sprite * _ship;
     
-    ParallaxNode * _backgroundNode;
+    ParallaxNodeExtras * _backgroundNode;
     Sprite * _spaceDust1;
     Sprite * _spaceDust2;
     Sprite * _planetSunrise;
@@ -32,7 +38,15 @@ private:
     Sprite * _spacialAnomaly;
     Sprite * _spaceialAnomaly2;
     
+    float _shipPointsPerSecY;
+    
     void update(float dt);
+    
+    //variables needed for asteroid
+    Vector<Sprite *> * _asteroids;
+    int _nextAsteroid;
+    float _nextAsteroidSpawn;
+    
     
 };
 
