@@ -18,7 +18,7 @@ public:
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
 	virtual void onAcceleration(Acceleration* acc, Event* event);
-    virtual void ccTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event);
+    //virtual void ccTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event);
     
     float randomValueBetween(float low, float high);
     void setInvisible(Node * node);
