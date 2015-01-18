@@ -6,6 +6,11 @@
 
 USING_NS_CC;
 
+typedef enum {
+    KENDREASONWIN,
+    KENDREASONLOSE
+} EndReason;
+
 class HelloWorld : public cocos2d::Layer
 {
 public:
@@ -51,6 +56,12 @@ private:
     Vector<Sprite *> * _shipLasers;
     int _nextShipLaser;
     
+    int _lives;
+    double _gameOverTime;
+    bool _gameOver;
+    
+    void endScene(EndReason endReason);
+    void restartTapped(Ref * pSender);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

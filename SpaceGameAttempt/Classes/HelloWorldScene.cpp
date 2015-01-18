@@ -94,6 +94,10 @@ bool HelloWorld::init()
     touchListener->onTouchesBegan = CC_CALLBACK_2(HelloWorld::onTouchesBegan, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
+    _lives = 3;
+    double curTime = getTimeTick();
+    _gameOverTime = curTime + 3000;
+    
     return true;
 }//end init function
 
@@ -157,7 +161,40 @@ void HelloWorld::update(float dt){
                         NULL)
                         );
     }//end if
-}
+    
+    //handle collision detection
+    for (auto asteroid : * _asteroids) {
+        if(!(asteroid->isVisible())) continue;
+        
+        for(auto shipLasers : *_shipLasers){
+            if(!(asteroid->isVisible())) continue;
+            
+            if(shipLasers->getBoundingBox().intersectsRect(asteroid->getBoundingBox())){
+                shipLasers->setVisible(false);
+                asteroid->setVisible(false);
+            }//end if the laser hit the asteroid
+            if(_ship->getBoundingBox().intersectsRect(asteroid->getBoundingBox())){
+                log("TEST 1");
+                asteroid->setVisible(false);
+                log("TEST 2");
+                _ship->runAction(Blink::create(1.0, 9));
+                log("TEST 3");
+                _lives--;
+                log("TEST 4");
+            }
+        }//end for
+    }//end for
+    
+    //handle win or lose
+    if(_lives <= 0){
+        _ship->stopAllActions();
+        _ship->setVisible(false);
+        this->endScene(KENDREASONLOSE);
+    }else if(curTimeMills >= _gameOverTime){
+        this->endScene(KENDREASONWIN);
+    }
+    
+}//end update function
 
 void HelloWorld::onTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event){
     //SimpleAudioEngine::getInstance()->playEffect(LASER_SHIP);
@@ -172,7 +209,7 @@ void HelloWorld::onTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Eve
     shipLaser->runAction(Sequence::create(MoveBy::create(0.5, Point(winSize.width, 0)),
                         CallFuncN::create(CC_CALLBACK_1(HelloWorld::setInvisible, this)),
                         NULL));
-    
+    //_lives = 3;
 }
 
 void HelloWorld::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event){
@@ -221,3 +258,42 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 void HelloWorld::setInvisible(Node * node){
     node->setVisible(false);
 }
+
+void HelloWorld::endScene(EndReason endReason){
+    if(_gameOver) return;
+    _gameOver = true;
+    
+    Size winSize = Director::getInstance()->getWinSize();
+    char message[] = "You Win";
+    if(endReason == KENDREASONLOSE) strcpy(message, "You Lose");
+    
+    auto label = Label::createWithBMFont("fonts/Arial.fnt", message);
+    label->setScale(0.1F);
+    label->setPosition(winSize.width /2, winSize.height *0.6F);
+    this->addChild(label);
+    
+    strcpy(message, "Restart");
+    auto restartLabel = Label::createWithBMFont("fonts/Arial.fnt", message);
+    auto restartItem = MenuItemLabel::create(restartLabel, CC_CALLBACK_1(HelloWorld::restartTapped, this));
+    restartItem->setScale(0.1F);
+    restartItem->setPosition(winSize.width/2, winSize.height *0.4);
+
+    auto menu = Menu::create(restartItem, NULL);
+    menu->setPosition(Point::ZERO);
+    this->addChild(menu);
+    
+    //clear label and menu
+    restartItem->runAction(ScaleTo::create(0.5F, 1.0F));
+    label->runAction(ScaleTo::create(0.5F, 1.0F));
+    
+    //terminal update callback
+    this->unscheduleUpdate();
+    
+}//end function endScene
+
+void HelloWorld::restartTapped(Ref * pSender){
+    Director::getInstance()->replaceScene(TransitionZoomFlipX::create(0.5, this->createScene()));
+    this->scheduleUpdate();
+}
+
+

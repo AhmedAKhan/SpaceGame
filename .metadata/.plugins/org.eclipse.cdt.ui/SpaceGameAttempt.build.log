@@ -1,6 +1,7 @@
-11:25:21 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+12:59:22 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
 python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
 make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= AppDelegate.cpp
 [armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
 [armeabi] SharedLibrary  : libcocos2dcpp.so
 [armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
@@ -9,5 +10,5 @@ We will remove this script next version,you should use cocos console to build an
 
 The Selected NDK toolchain version was 4.9 !
 
-11:25:29 Build Finished (took 7s.970ms)
+12:59:45 Build Finished (took 22s.839ms)
 

@@ -1200,3 +1200,14 @@ make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAtt
 We will remove this script next version,you should use cocos console to build android project.
 
 The Selected NDK toolchain version was 4.9 !
+12:59:22 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= AppDelegate.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
