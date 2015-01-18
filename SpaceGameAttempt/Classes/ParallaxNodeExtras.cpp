@@ -6,9 +6,9 @@
 //
 //
 
-USING_NS_CC;
-
 #include "ParallaxNodeExtras.h"
+
+USING_NS_CC;
 
 class PointObject : public Ref
 {

@@ -1,0 +1,198 @@
+#include "HelloWorldScene.h"
+
+USING_NS_CC;
+
+Scene* HelloWorld::createScene()
+{
+    // 'scene' is an autorelease object
+    auto scene = Scene::create();
+    
+    // 'layer' is an autorelease object
+    auto layer = HelloWorld::create();
+
+    // add layer as a child to scene
+    scene->addChild(layer);
+
+    // return the scene
+    return scene;
+}
+
+// on "init" you need to initialize your instance
+bool HelloWorld::init()
+{
+    if(!Layer::init()) return false;
+
+    _batchNode = CCSpriteBatchNode::create("Spritesheets/Sprites.pvr.ccz");
+    this->addChild(_batchNode);
+
+    // load the Sprite Sheet
+    auto spritecache = SpriteFrameCache::getInstance();
+    spritecache->addSpriteFramesWithFile("Spritesheets/Sprites.plist");
+    
+    ///add the ship
+    _ship = CCSprite::createWithSpriteFrameName("SpaceFlier_sm_1.png");
+    Size winSize = Director::getInstance()->getWinSize();
+    _ship->setPosition(Vec2(winSize.width * 0.1, winSize.height * 0.5));
+    _batchNode->addChild(_ship, 1);
+    
+    //create the parallaxNode
+    _backgroundNode = ParallaxNodeExtras::node();
+    this->addChild(_backgroundNode, -1);
+    
+    //create the sprites, then add them to the parallaxNode
+    _spaceDust1 = Sprite::create("Backgrounds/bg_front_spacedust.png");
+    _spaceDust2 = Sprite::create("Backgrounds/bg_front_spacedust.png");
+    _planetSunrise = Sprite::create("Backgrounds/bg_planetsunrise.png");
+    _galaxy = Sprite::create("Backgrounds/bg_galaxy.png");
+    _spacialAnomaly = Sprite::create("Backgrounds/bg_spacialanomaly.png");
+    _spaceialAnomaly2 = Sprite::create("Backgrounds/bg_spacialanomaly2.png");
+
+    //determine the relative movement speed for space dust and background
+    Point dustSpeed = Point(0.1, 0.1);
+    Point bgSpeed = Point(0.05, 0.05);
+    
+    // add the children to the parrallax node
+    _backgroundNode->addChild(_spaceDust1, 0, dustSpeed, Point(0, winSize.height/2));
+    _backgroundNode->addChild(_spaceDust2, 0, dustSpeed, Point(_spaceDust1->getContentSize().width, winSize.height/2));
+    _backgroundNode->addChild(_galaxy, -1, bgSpeed, Point(0, winSize.height * 0.7));
+    _backgroundNode->addChild(_planetSunrise, -1, bgSpeed, Point(600, winSize.height * 0));
+    _backgroundNode->addChild(_spacialAnomaly, -1, bgSpeed, Point(900, winSize.height * 0.3));
+    _backgroundNode->addChild(_spaceialAnomaly2, -1, bgSpeed, Point(1500, winSize.height * 0.9));
+    
+    //make the update function run
+    this->scheduleUpdate();
+    
+    //add the stars
+    HelloWorld::addChild(ParticleSystemQuad::create("Particles/Stars1.plist"));
+    HelloWorld::addChild(ParticleSystemQuad::create("Particles/Stars2.plist"));
+    HelloWorld::addChild(ParticleSystemQuad::create("Particles/Stars3.plist"));
+    
+    //the accelerometer stuff
+    Device::setAccelerometerEnabled(true);
+    auto accelerationListener = EventListenerAcceleration::create(CC_CALLBACK_2(HelloWorld::onAcceleration, this));
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(accelerationListener, this);
+    
+    //do the asteroid stuff
+#define KNUMASTEROIDS 15
+    _asteroids = new Vector<Sprite*>(KNUMASTEROIDS);
+    for(int i = 0; i < KNUMASTEROIDS; i++){
+        auto * asteroid = Sprite::createWithSpriteFrameName("asteroid.png");
+        asteroid->setVisible(true);
+        _batchNode->addChild(asteroid);
+        _asteroids->pushBack(asteroid);
+    }
+    
+#define KNUMBLASTERS 5
+    
+    return true;
+}
+
+void HelloWorld::update(float dt){
+    Point backgroundScrollVert = Point(-1000, 0);
+    _backgroundNode->setPosition(_backgroundNode->getPosition() + backgroundScrollVert * dt);
+    
+    // moving the spacedust
+    auto spaceDusts = new Vector<Sprite *> (2);
+    spaceDusts->pushBack(_spaceDust1);
+    spaceDusts->pushBack(_spaceDust2);
+    for (auto spaceDust : *spaceDusts) {
+        float xPosition = _backgroundNode->convertToWorldSpace(spaceDust->getPosition()).x;
+        float size = spaceDust->getContentSize().width;
+        if(xPosition < -size/2) _backgroundNode->incrementOffset(Point(spaceDust->getContentSize().width * 2.0, 0), spaceDust);
+    }
+    
+    //moving the backgrounds
+    auto backgrounds = new Vector<Sprite *>(4);
+    backgrounds->pushBack(_galaxy);
+    backgrounds->pushBack(_planetSunrise);
+    backgrounds->pushBack(_spacialAnomaly);
+    backgrounds->pushBack(_spaceialAnomaly2);
+    for(auto background : * backgrounds){
+        float xPosition = _backgroundNode->convertToWorldSpace(background->getPosition()).x;
+        float size = background->getContentSize().width;
+        if(xPosition < -size) _backgroundNode->incrementOffset(Point(2000, 0), background);
+    }//end for loop
+    
+    //do the acceleration stuff
+    Size winSize = Director::getInstance()->getWinSize();
+    float maxY = winSize.height - _ship->getContentSize().height/2;
+    float minY = _ship->getContentSize().height/2;
+    float diff = (_shipPointsPerSecY * dt);
+    float newY = _ship->getPosition().y + diff;
+    newY = MIN(MAX(newY, minY), maxY);
+    _ship->setPosition(Vec2(_ship->getPosition().x, newY));
+    
+    //move the asteroids
+    unsigned long curTimeMills = getTimeTick();
+    if(curTimeMills > _nextAsteroidSpawn){
+       // log("inside the if statement");
+        unsigned long randomMills = randomValueBetween(0.2F, 1.0F) * 1000;
+        _nextAsteroidSpawn = randomMills + curTimeMills;
+      //  printf("randomMills: %f", randomMills);
+        float randY = randomValueBetween(0.0F, winSize.height);
+        float randDuration = randomValueBetween(2.0F, 10.0F);
+        
+        Sprite * asteroid = _asteroids->at(_nextAsteroid);
+        _nextAsteroid++;
+        if(_nextAsteroid >= _asteroids->size())
+            _nextAsteroid=0;
+        
+        log("TEST: in the update function");
+        asteroid->stopAllActions();
+        asteroid->setPosition(Vec2(winSize.width + asteroid->getContentSize().width/2, randY));
+        asteroid->setVisible(true);
+        asteroid->runAction(
+                Sequence::create(MoveBy::create(randDuration, Vec2(-winSize.width-asteroid->getContentSize().width, 0)),
+                        CallFuncN::create(CC_CALLBACK_1(HelloWorld::setInvisible, this)),
+                        NULL)
+                        );
+    }//end if
+}
+
+void HelloWorld::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event){
+#define KFILTERINGFACTOR 1.0
+#define KRESTACCELX 0.6
+#define KSHIPMAXPOINTERPERSEC (winSize.height*0.5)
+#define KMAXDIFF 0.2
+    
+    // Cocos2DX inverts X and Y accelerometer depending on device orientation
+    // in landscape mode right x=-y and y=x !!! (Strange and confusing choice
+    double rollingX;
+    //printf("x acceleration: %f yAccel:%f zAccel: %f\n", acc->x, acc->y, acc->z);
+    log("accelX: " + acc->x + " accelY: " + acc->y + " accelZ: " + acc->z);
+    acc->x = acc->y; //doing this because cocos2dx inverts x and y accelerometer
+    rollingX = (acc->x * KFILTERINGFACTOR) + (rollingX * (1.0 - KFILTERINGFACTOR));
+    float accelX = acc->x - rollingX;
+    Size winSize = Director::getInstance()->getWinSize();
+    float accelDiff = accelX - KRESTACCELX;
+    float accelerationFraction = accelDiff/KMAXDIFF;
+    _shipPointsPerSecY = KSHIPMAXPOINTERPERSEC * accelerationFraction;
+}
+
+float HelloWorld::randomValueBetween(float low, float high){
+    return low + static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / (high - low)));
+    //return (((float)arc4random()/0xFFFFFFFFu) * (high - low)) + low;
+}
+unsigned long HelloWorld::getTimeTick(){
+    timeval time;
+    gettimeofday(&time, NULL);
+    unsigned long millisecs = (time.tv_sec * 1000) + (time.tv_usec / 1000);
+    return millisecs;
+}
+
+void HelloWorld::menuCloseCallback(Ref* pSender)
+{
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
+	MessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
+    return;
+#endif
+    
+    Director::getInstance()->end();
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    exit(0);
+#endif
+}
+void HelloWorld::setInvisible(Node * node){
+    node->setVisible(false);
+}

@@ -18,7 +18,7 @@ public:
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
 	virtual void onAcceleration(Acceleration* acc, Event* event);
-    //virtual void ccTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event);
+    virtual void onTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event);
     
     float randomValueBetween(float low, float high);
     void setInvisible(Node * node);
@@ -48,7 +48,7 @@ private:
     int _nextAsteroid;
     unsigned long _nextAsteroidSpawn;
     
-    Vector<Sprite *> _shipLasers;
+    Vector<Sprite *> * _shipLasers;
     int _nextShipLaser;
     
 };

@@ -83,9 +83,19 @@ bool HelloWorld::init()
     }
     
 #define KNUMBLASTERS 5
+    _shipLasers = new Vector<Sprite *>(KNUMBLASTERS);
+    for(int i = 0; i < KNUMBLASTERS; i++){
+        auto shipLaser = Sprite::createWithSpriteFrameName("laserbeam_blue.png");
+        shipLaser->setVisible(false);
+        _batchNode->addChild(shipLaser);
+        _shipLasers->pushBack(shipLaser);
+    }//end for
+    auto touchListener = EventListenerTouchAllAtOnce::create();
+    touchListener->onTouchesBegan = CC_CALLBACK_2(HelloWorld::onTouchesBegan, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
     return true;
-}
+}//end init function
 
 void HelloWorld::update(float dt){
     Point backgroundScrollVert = Point(-1000, 0);
@@ -137,7 +147,7 @@ void HelloWorld::update(float dt){
         if(_nextAsteroid >= _asteroids->size())
             _nextAsteroid=0;
         
-        
+        log("TEST: in the update function");
         asteroid->stopAllActions();
         asteroid->setPosition(Vec2(winSize.width + asteroid->getContentSize().width/2, randY));
         asteroid->setVisible(true);
@@ -149,22 +159,39 @@ void HelloWorld::update(float dt){
     }//end if
 }
 
+void HelloWorld::onTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event){
+    //SimpleAudioEngine::getInstance()->playEffect(LASER_SHIP);
+    Size winSize = Director::getInstance()->getWinSize();
+    Sprite *shipLaser = (Sprite *)_shipLasers->at(_nextShipLaser++);
+    if(_nextShipLaser >= _shipLasers->size())
+        _nextShipLaser = 0;
+    
+    shipLaser->setPosition(_ship->getPosition() + Point(shipLaser->getContentSize().width/2, 0));
+    shipLaser->setVisible(true);
+    shipLaser->stopAllActions();
+    shipLaser->runAction(Sequence::create(MoveBy::create(0.5, Point(winSize.width, 0)),
+                        CallFuncN::create(CC_CALLBACK_1(HelloWorld::setInvisible, this)),
+                        NULL));
+    
+}
+
 void HelloWorld::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event){
-#define KFILTERINGFACTOR 1.0
-#define KRESTACCELX 0.6
-#define KSHIPMAXPOINTERPERSEC (winSize.height*0.5)
+#define KFILTERINGFACTOR 0.1
+#define KRESTACCELX -0.6
+#define KSHIPMAXPOINTSPERSEC (winSize.height*0.5)
 #define KMAXDIFF 0.2
     
     // Cocos2DX inverts X and Y accelerometer depending on device orientation
     // in landscape mode right x=-y and y=x !!! (Strange and confusing choice
     double rollingX;
+
     acc->x = acc->y; //doing this because cocos2dx inverts x and y accelerometer
     rollingX = (acc->x * KFILTERINGFACTOR) + (rollingX * (1.0 - KFILTERINGFACTOR));
     float accelX = acc->x - rollingX;
     Size winSize = Director::getInstance()->getWinSize();
     float accelDiff = accelX - KRESTACCELX;
     float accelerationFraction = accelDiff/KMAXDIFF;
-    _shipPointsPerSecY = KSHIPMAXPOINTERPERSEC * accelerationFraction;
+    _shipPointsPerSecY = KSHIPMAXPOINTSPERSEC * accelerationFraction;
 }
 
 float HelloWorld::randomValueBetween(float low, float high){

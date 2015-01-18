@@ -928,3 +928,275 @@ make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAtt
 We will remove this script next version,you should use cocos console to build android project.
 
 The Selected NDK toolchain version was 4.9 !
+01:28:21 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+jni/Android.mk:16: *** commands commence before first target.  Stop.
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+Traceback (most recent call last):
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 149, in <module>
+    build(opts.ndk_build_param,opts.android_platform,opts.build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 134, in build
+    do_build(cocos_root, ndk_root, app_android_root,ndk_build_param,sdk_root,android_platform,build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 70, in do_build
+    raise Exception("Build dynamic library for project [ " + app_android_root + " ] fails!")
+Exception: Build dynamic library for project [ /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android ] fails!
+01:28:42 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= main.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= AppDelegate.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= ParallaxNodeExtras.cpp
+jni/../../Classes/ParallaxNodeExtras.cpp:9:1: error: 'USING_NS_CC' does not name a type
+ USING_NS_CC;
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+make: *** [obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/ParallaxNodeExtras.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+Traceback (most recent call last):
+We will remove this script next version,you should use cocos console to build android project.
+
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 149, in <module>
+The Selected NDK toolchain version was 4.9 !
+    build(opts.ndk_build_param,opts.android_platform,opts.build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 134, in build
+    do_build(cocos_root, ndk_root, app_android_root,ndk_build_param,sdk_root,android_platform,build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 70, in do_build
+    raise Exception("Build dynamic library for project [ " + app_android_root + " ] fails!")
+Exception: Build dynamic library for project [ /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android ] fails!
+01:29:26 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= ParallaxNodeExtras.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+01:30:26 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+01:33:29 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+jni/../../Classes/HelloWorldScene.cpp: In member function 'virtual void HelloWorld::onAcceleration(cocos2d::Acceleration*, cocos2d::Event*)':
+jni/../../Classes/HelloWorldScene.cpp:161:79: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+     printf("x acceleration: %d yAccel:%d zAccel: %d\n", acc->x, acc->y, acc->z);
+                                                                               ^
+jni/../../Classes/HelloWorldScene.cpp:161:79: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+jni/../../Classes/HelloWorldScene.cpp:161:79: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat=]
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+01:34:01 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+01:37:16 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= AppDelegate.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+11:13:07 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+jni/../../Classes/HelloWorldScene.cpp: In member function 'virtual void HelloWorld::update(float)':
+jni/../../Classes/HelloWorldScene.cpp:140:9: error: 'Log' was not declared in this scope
+         Log.d("in the update function");
+         ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+make: *** [obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o] Error 1
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+Traceback (most recent call last):
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 149, in <module>
+    build(opts.ndk_build_param,opts.android_platform,opts.build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 134, in build
+    do_build(cocos_root, ndk_root, app_android_root,ndk_build_param,sdk_root,android_platform,build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 70, in do_build
+    raise Exception("Build dynamic library for project [ " + app_android_root + " ] fails!")
+Exception: Build dynamic library for project [ /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android ] fails!
+11:15:07 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+jni/../../Classes/HelloWorldScene.cpp: In member function 'virtual void HelloWorld::update(float)':
+jni/../../Classes/HelloWorldScene.cpp:141:37: error: 'Log' was not declared in this scope
+         Log("in the update function");
+                                     ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+make: *** [obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o] Error 1
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+Traceback (most recent call last):
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 149, in <module>
+We will remove this script next version,you should use cocos console to build android project.
+
+    build(opts.ndk_build_param,opts.android_platform,opts.build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 134, in build
+The Selected NDK toolchain version was 4.9 !
+    do_build(cocos_root, ndk_root, app_android_root,ndk_build_param,sdk_root,android_platform,build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 70, in do_build
+    raise Exception("Build dynamic library for project [ " + app_android_root + " ] fails!")
+Exception: Build dynamic library for project [ /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android ] fails!
+11:15:45 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+11:16:34 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+11:19:15 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+jni/../../Classes/HelloWorldScene.cpp: In member function 'virtual void HelloWorld::onAcceleration(cocos2d::Acceleration*, cocos2d::Event*)':
+jni/../../Classes/HelloWorldScene.cpp:162:27: error: invalid operands of types 'const char [9]' and 'double' to binary 'operator+'
+     log("accelX: " + acc->x + " accelY: " + acc->y + " accelZ: " + acc->z);
+                           ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+make: *** [obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o] Error 1
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+Traceback (most recent call last):
+
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 149, in <module>
+The Selected NDK toolchain version was 4.9 !
+    build(opts.ndk_build_param,opts.android_platform,opts.build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 134, in build
+    do_build(cocos_root, ndk_root, app_android_root,ndk_build_param,sdk_root,android_platform,build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 70, in do_build
+    raise Exception("Build dynamic library for project [ " + app_android_root + " ] fails!")
+Exception: Build dynamic library for project [ /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android ] fails!
+11:19:51 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+11:20:47 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+11:21:04 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+11:25:07 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+jni/../../Classes/HelloWorldScene.cpp: In member function 'virtual void HelloWorld::onAcceleration(cocos2d::Acceleration*, cocos2d::Event*)':
+jni/../../Classes/HelloWorldScene.cpp:173:8: error: redeclaration of 'float accelX'
+  float accelX = acc->x - rollingX;
+        ^
+jni/../../Classes/HelloWorldScene.cpp:165:11: note: 'float accelX' previously declared here
+     float accelX = acc->x - rollingX;
+           ^
+jni/../../Classes/HelloWorldScene.cpp:174:7: error: redeclaration of 'cocos2d::Size winSize'
+  Size winSize = Director::getInstance()->getWinSize();
+       ^
+jni/../../Classes/HelloWorldScene.cpp:166:10: note: 'cocos2d::Size winSize' previously declared here
+     Size winSize = Director::getInstance()->getWinSize();
+          ^
+jni/../../Classes/HelloWorldScene.cpp:175:8: error: redeclaration of 'float accelDiff'
+  float accelDiff = accelX - KRESTACCELX;
+        ^
+jni/../../Classes/HelloWorldScene.cpp:167:11: note: 'float accelDiff' previously declared here
+     float accelDiff = accelX - KRESTACCELX;
+           ^
+jni/../../Classes/HelloWorldScene.cpp:176:36: error: 'KMAXDIFFX' was not declared in this scope
+  float accelFraction = accelDiff / KMAXDIFFX;
+                                    ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+cc1plus: warning: unrecognized command line option "-Wno-extern-c-compat"
+make: *** [obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o] Error 1
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
+Traceback (most recent call last):
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 149, in <module>
+    build(opts.ndk_build_param,opts.android_platform,opts.build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 134, in build
+    do_build(cocos_root, ndk_root, app_android_root,ndk_build_param,sdk_root,android_platform,build_mode)
+  File "/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py", line 70, in do_build
+    raise Exception("Build dynamic library for project [ " + app_android_root + " ] fails!")
+Exception: Build dynamic library for project [ /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android ] fails!
+11:25:21 **** Incremental Build of configuration Release for project SpaceGameAttempt ****
+python /Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android/build_native.py -b release all 
+make: Entering directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= HelloWorldScene.cpp
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make: Leaving directory `/Users/ahmed/Documents/Cocos2d-x/SpaceGame/SpaceGameAttempt/proj.android'
+We will remove this script next version,you should use cocos console to build android project.
+
+The Selected NDK toolchain version was 4.9 !
