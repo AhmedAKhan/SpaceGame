@@ -69,8 +69,6 @@ bool HelloWorld::init()
     
     //the accelerometer stuff
     Device::setAccelerometerEnabled(true);
-    auto accelerationListener = EventListenerAcceleration::create(CC_CALLBACK_2(HelloWorld::onAcceleration, this));
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(accelerationListener, this);
     
     //do the asteroid stuff
 #define KNUMASTEROIDS 15
@@ -123,14 +121,13 @@ void HelloWorld::update(float dt){
     _ship->setPosition(Vec2(_ship->getPosition().x, newY));
     
     //move the asteroids
-    unsigned long curTimeMills = getTimeTick();
+    float curTimeMills = getTimeTick();
     if(curTimeMills > _nextAsteroidSpawn){
-       // log("inside the if statement");
-        unsigned long randomMills = randomValueBetween(0.2F, 1.0F) * 1000;
+        float randomMills = randomValueBetween(0.2, 1.0) * 1000;
         _nextAsteroidSpawn = randomMills + curTimeMills;
-      //  printf("randomMills: %f", randomMills);
-        float randY = randomValueBetween(0.0F, winSize.height);
-        float randDuration = randomValueBetween(2.0F, 10.0F);
+        
+        float randY = randomValueBetween(0.0, winSize.height);
+        float randDuration = randomValueBetween(2.0, 10.0);
         
         Sprite * asteroid = _asteroids->at(_nextAsteroid);
         _nextAsteroid++;
@@ -142,7 +139,7 @@ void HelloWorld::update(float dt){
         asteroid->setPosition(Vec2(winSize.width + asteroid->getContentSize().width/2, randY));
         asteroid->setVisible(true);
         asteroid->runAction(
-                Sequence::create(MoveBy::create(randDuration, Vec2(-winSize.width-asteroid->getContentSize().width, 0)),
+                Sequence::create(MoveBy::create(randDuration, Vec2(-winSize.width-asteroid->getContentSize().width/2, 0)),
                         CallFuncN::create(CC_CALLBACK_1(HelloWorld::setInvisible, this)),
                         NULL)
                         );
@@ -167,17 +164,13 @@ void HelloWorld::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *even
     _shipPointsPerSecY = KSHIPMAXPOINTERPERSEC * accelerationFraction;
 }
 
-float HelloWorld::randomValueBetween(float low, float high){
-    return low + static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / (high - low)));
-    //return (((float)arc4random()/0xFFFFFFFFu) * (high - low)) + low;
-}
-unsigned long HelloWorld::getTimeTick(){
+float HelloWorld::randomValueBetween(float min, float max){ return (((float)arc4random()/0xFFFFFFFFu) * (max - min)) + min; }
+float HelloWorld::getTimeTick(){
     timeval time;
     gettimeofday(&time, NULL);
-    unsigned long millisecs = (time.tv_sec * 1000) + (time.tv_usec / 1000);
-    return millisecs;
+    unsigned long millisecs = (time.tv_sec * 100) + (time.tv_usec/1000);
+    return (float) millisecs;;
 }
-
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)

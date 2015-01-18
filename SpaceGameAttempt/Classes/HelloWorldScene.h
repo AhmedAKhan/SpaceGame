@@ -18,10 +18,11 @@ public:
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
 	virtual void onAcceleration(Acceleration* acc, Event* event);
+    virtual void ccTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event);
     
     float randomValueBetween(float low, float high);
     void setInvisible(Node * node);
-    float getTimeTick();
+    unsigned long getTimeTick();
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
@@ -45,8 +46,10 @@ private:
     //variables needed for asteroid
     Vector<Sprite *> * _asteroids;
     int _nextAsteroid;
-    float _nextAsteroidSpawn;
+    unsigned long _nextAsteroidSpawn;
     
+    Vector<Sprite *> _shipLasers;
+    int _nextShipLaser;
     
 };
 
