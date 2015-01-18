@@ -1,4 +1,6 @@
 #include "HelloWorldScene.h"
+#include "SimpleAudioEngine.h"
+using namespace CocosDenshion;
 
 USING_NS_CC;
 
@@ -96,7 +98,12 @@ bool HelloWorld::init()
     
     _lives = 3;
     double curTime = getTimeTick();
-    _gameOverTime = curTime + 3000;
+    _gameOverTime = curTime + 300000;
+    
+    //get all the sound files
+    SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/SpaceGame.wav", true);
+    SimpleAudioEngine::getInstance()->preloadEffect("Sounds/explosion_large.wav");
+    SimpleAudioEngine::getInstance()->preloadEffect("Sounds/laser_ship.wav");
     
     return true;
 }//end init function
@@ -151,7 +158,6 @@ void HelloWorld::update(float dt){
         if(_nextAsteroid >= _asteroids->size())
             _nextAsteroid=0;
         
-        log("TEST: in the update function");
         asteroid->stopAllActions();
         asteroid->setPosition(Vec2(winSize.width + asteroid->getContentSize().width/2, randY));
         asteroid->setVisible(true);
@@ -166,23 +172,23 @@ void HelloWorld::update(float dt){
     for (auto asteroid : * _asteroids) {
         if(!(asteroid->isVisible())) continue;
         
-        for(auto shipLasers : *_shipLasers){
-            if(!(asteroid->isVisible())) continue;
+        for(auto shipLaser : *_shipLasers){
+            if(!(shipLaser->isVisible())) continue;
             
-            if(shipLasers->getBoundingBox().intersectsRect(asteroid->getBoundingBox())){
-                shipLasers->setVisible(false);
+            if(shipLaser->getBoundingBox().intersectsRect(asteroid->getBoundingBox())){
+                shipLaser->setVisible(false);
                 asteroid->setVisible(false);
+                SimpleAudioEngine::getInstance()->playEffect("Sounds/explosion_large.wav");
+                continue;
             }//end if the laser hit the asteroid
-            if(_ship->getBoundingBox().intersectsRect(asteroid->getBoundingBox())){
-                log("TEST 1");
-                asteroid->setVisible(false);
-                log("TEST 2");
-                _ship->runAction(Blink::create(1.0, 9));
-                log("TEST 3");
-                _lives--;
-                log("TEST 4");
-            }
         }//end for
+        
+        //if ship hits the asteroid
+        if(_ship->getBoundingBox().intersectsRect(asteroid->getBoundingBox())){
+            asteroid->setVisible(false);
+            _ship->runAction(Blink::create(1.0, 9));
+            _lives--;
+        }//end if
     }//end for
     
     //handle win or lose
@@ -194,10 +200,12 @@ void HelloWorld::update(float dt){
         this->endScene(KENDREASONWIN);
     }
     
+    
+    
 }//end update function
 
 void HelloWorld::onTouchesBegan(const std::vector<Touch*>& touches, cocos2d::Event* event){
-    //SimpleAudioEngine::getInstance()->playEffect(LASER_SHIP);
+    SimpleAudioEngine::getInstance()->playEffect("Sounds/laser_ship.wav");
     Size winSize = Director::getInstance()->getWinSize();
     Sprite *shipLaser = (Sprite *)_shipLasers->at(_nextShipLaser++);
     if(_nextShipLaser >= _shipLasers->size())
@@ -263,8 +271,9 @@ void HelloWorld::endScene(EndReason endReason){
     if(_gameOver) return;
     _gameOver = true;
     
-    Size winSize = Director::getInstance()->getWinSize();
-    char message[] = "You Win";
+    //could make this auto
+    auto winSize = Director::getInstance()->getWinSize();
+    char message[10] = "You Win";
     if(endReason == KENDREASONLOSE) strcpy(message, "You Lose");
     
     auto label = Label::createWithBMFont("fonts/Arial.fnt", message);
@@ -290,6 +299,7 @@ void HelloWorld::endScene(EndReason endReason){
     this->unscheduleUpdate();
     
 }//end function endScene
+
 
 void HelloWorld::restartTapped(Ref * pSender){
     Director::getInstance()->replaceScene(TransitionZoomFlipX::create(0.5, this->createScene()));
