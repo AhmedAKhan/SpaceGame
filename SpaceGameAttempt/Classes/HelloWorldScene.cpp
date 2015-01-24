@@ -96,9 +96,9 @@ bool HelloWorld::init()
     touchListener->onTouchesBegan = CC_CALLBACK_2(HelloWorld::onTouchesBegan, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
-    _lives = 3;
+    _lives = 300;
     double curTime = getTimeTick();
-    _gameOverTime = curTime + 300000;
+    _gameOverTime = curTime + 20*1000;
     
     //get all the sound files
     SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/SpaceGame.wav", true);
